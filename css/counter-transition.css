@@ -1,0 +1,42 @@
+body {
+	background: url(file:///F:/Disque%20Dur%20TOSHIBA/Site%20Globale/Site%20A-21/img/noise.jpg);
+    animation:  animate .5s linear infinite;
+	color: white;
+	font-family: 'Lato';
+	font-size: 190%;
+}
+
+@keyframes animate{
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: 100% 100%;
+    }
+}
+
+.text{
+	display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: right;
+    text-align: center;
+    padding-top: 21%;
+    display: border-box;
+}
+
+.container {
+	display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: right;
+    text-align: center;
+    padding-top: 2%;
+}
+
+.bloc {
+	position: relative;
+	display: block;
+	float: left;
+	padding-right: 20px;
+}

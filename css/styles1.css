@@ -1,0 +1,40 @@
+body{
+	background: url(file:///F:/Disque%20Dur%20TOSHIBA/Site%20Globale/Site%20A-21/img/background.gif) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size:cover;
+	font-family: "Montserrat",sans-serif;
+	min-height: 0vh;
+}
+
+.container{
+	width: 97%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	color: #E4E4E4;
+}
+
+.container h1{
+	font-size: 160px;
+	margin: 0;
+	font-weight: 0;
+	letter-spacing: 15px;
+}
+
+.container a{
+	text-decoration: none;
+	background: black;
+	color: #fff;
+	padding: 12px 24px;
+	display: inline-block;
+	border-radius: 25px;
+	font-size: 14px
+	text-transform: uppercase;
+	transition: 0.4s;
+}
+
+.container a:hover{
+	background: #272727;
+}
