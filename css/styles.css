@@ -193,10 +193,10 @@ div.home a:hover{
 }
 
 body{
-	background: url("img/background.gif");
-    background-size: cover;
-    background-repeat: no-repeat;
-
+	background: url("../img/background.gif") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size:cover;
 }
 
 div.faq{
@@ -311,7 +311,7 @@ div.shop hr{
     display: absolute;
     border: 2px solid white;
     position: flex;
-    background-image: url("img/404-item-blur.png");
+    background-image: url("../img/404-item-blur.png");
     width: 300px;
     text-align: center;
     margin-left: 21em;
@@ -328,7 +328,7 @@ div.shop hr{
 .item2{
     display: absolute;
     position: flex;
-    background-image: url("img/404-item-blur.png");
+    background-image: url("../img/404-item-blur.png");
     backface-visibility: 50%;
     width: 300px;
     text-align: center;
@@ -347,7 +347,7 @@ div.shop hr{
 .item3{
     display: absolute;
     position: flex;
-    background-image: url("img/404-item-blur.png");
+    background-image: url("../img/404-item-blur.png");
     width: 300px;
     text-align: center;
     color: white;
@@ -556,23 +556,11 @@ div.equipe hr{
     cursor: pointer;
 }
 
-.btn img{
-    width: 20px;
-    height: 20px;
-}
 
-.left-btn{
-    left:-35px;
-}
-
-.right-btn{
-    right: -35px;
-}
 
 .nav{
     width: 100%;
     height: 30px;
-    position: absolute;
     top: 400px;
     display: flex;
     justify-content: center;
@@ -694,10 +682,6 @@ div.equipe hr{
 }
 
 .nav{
-    width: 100%;
-    height: 30px;
-    position: absolute;
-    top: 575px;
     display: flex;
     justify-content: center;
 }
@@ -708,7 +692,6 @@ div.equipe hr{
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    margin: 8px 10px;
     cursor: pointer;
 }
 

@@ -1,20 +1,18 @@
 body{
 	display: block;
-	background: url(file:///F:/Disque%20Dur%20TOSHIBA/Application/Photoshop%20[images-projet]/Gif/2070f812d6a581d5782c2df2f13165e8.gif) no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size:cover;
-	background-size: cover;
-	margin-left: 450px;
-	margin-right: 450px;
+	background: url("../img/background.gif") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size:cover;
+
 	border: none;
 	color: #b4b4b4;
 }
 .image{
   width: 51%;
-  position: absolute;
+  position: fixed;
   top: 50%;
-
+  left: 25%;
   transform: translateY(-50%);
   text-align: center;
 }
