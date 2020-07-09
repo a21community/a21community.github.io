@@ -1,0 +1,42 @@
+body {
+	background: url("../img/background.gif") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size:cover;
+}
+
+body{
+  	color: #777;
+  	font-family: "Gill sans", sans-serif;
+}
+
+.loading{
+  display: none;
+}
+
+.loader{
+	position: fixed;
+  	top: 57%;
+  	left: 49.85%;
+}
+
+/*
+  Set the color of the icon
+*/
+svg path,
+svg rect{
+  	fill: white;
+}
+
+.image{
+  	width: 51%;
+  	position: fixed;
+  	top: 45%;
+  	left: 25%;
+  	transform: translateY(-50%);
+  	text-align: center;
+}
+
+div.image img{
+	size: 200px;
+}
