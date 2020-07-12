@@ -77,7 +77,7 @@ nav.menu-nav ul{
     align-items: center;
 }
 
-nav.menu-nav ul li{
+nav.menu-nav ul li.btn1{
 	text-decoration: none;
 	margin: 0 25px;
 	list-style: none;
@@ -691,7 +691,7 @@ footer{
     text-align: center;
     vertical-align: middle;
     padding-top: 40px;
-    border-top: solid 1px rgb(59, 24, 153)
+    border-top: solid 1px rgb(59, 24, 153);
 }
 
 footer p{
@@ -747,53 +747,6 @@ footer h1{
     display: inline-block;
     vertical-align: middle;
     margin: 6px;
-}
-
-.language{
-    color: white;
-    padding-right: 5px;
-}
-
-.language {
-    list-style: none;
-    border-radius: 5px;
-    background: white;
-    float: left;
-    font-size: 20px;
-    font-family: Montserrat, sans-serif;
-}
-
-.language img {
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.dropdown-content {
-    display: none;
-    list-style: none;
-    border-radius: 5px;
-    transition: .5s;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-    
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-    transition: .5s;
-}
-
-/* Show the dropdown menu on hover */
-.language:hover .dropdown-content {
-    display: block;
-    transition: .5s;
-}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.language:hover .dropbtn {
-    background: 
 }
 
 @charset "UTF-8";
