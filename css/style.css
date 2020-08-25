@@ -4,6 +4,21 @@
 	font-family: 'Lato', sans-serif;
 }
 
+::-webkit-scrollbar{
+	width: 8px;
+}
+
+::-webkit-scrollbar-thumb{
+	background-color: #00ff43;
+	box-shadow: outset 0 0 2.5px 2px rgba(0,0,0,0.5);
+	border-radius: 24px;
+}
+
+::-webkit-scrollbar-track{
+	background-color: #000000;
+	box-shadow: outset 0 0 2.5px 2px rgba(0,0,0,0.5);
+}
+
 body {
 	display: flex;
 	justify-content: center;
@@ -132,6 +147,14 @@ svg circle:nth-child(2) {
 }
 
 .card:nth-child(1) svg circle:nth-child(2) {
-	stroke-dashoffset: calc(440 - (440 * 98) / 100);
+	stroke-dashoffset: calc(440 - (440 * 100) / 100);
 	stroke: #00ff43;
+}
+
+.dolist {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	margin-top: 35em;
 }
