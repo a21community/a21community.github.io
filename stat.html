@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html class="animated fadeIn">
+<head>
+    <title>Site de la A-21</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/language.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/logoweb.png">
+
+<div class="home">
+    <p>A-21 COMMUNAUTAIRE</p>
+</div>
+</head>
+
+<header>
+    <nav class="menu-nav">
+        <ul class="language">
+            <li class="selector"><a class="selector"><img src="img/world.png" height="15px"><img src="img/bottom.png" height="12px"></a>
+            <ul class="langchoice">
+                <li class="french"><a class="french" href="#" onclick="langbutton()">Français<img src="img/france.png" width="32px"></a></li>
+                <li><a href="#eng" onclick="langbutton()">English<img src="img/united-kingdom.png" width="32px"></a></li>
+                <li><a href="#es" onclick="langbutton()">Español<img src="img/spain.png" width="32px"></a></li>
+                <li class="germany"><a class="germany" href="#deu" onclick="langbutton()">Deutsh<img src="img/germany.png" width="32px"></a></li>
+            </ul>
+            </li>
+        </ul>
+        <ul class="menu-header">
+            <li class="btn"><a href="home.html" id="homebtn">ACCUEIL</a>
+            </li>
+            <li class="btn"><a href="faq.html" id="faqbtn">À PROPOS DE NOUS</a>
+            </li>
+            <li class="btn"><a class="headercenter" href="home.html"><img src="img/logoa-21coupé.png" width="80px"></a>
+            </li>
+            <li class="btn"><a href="shop.html" id="shopbtn">BOUTIQUE</a>
+            </li>
+            <li class="btn"><a href="stat.html" id="statbtn">STATISTIQUES</a>
+            </li>
+        </ul>
+    </nav>
+<section class="banner"></section>
+<script type="text/javascript">
+    window.addEventListener("scroll", function(){
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+    })
+</script>
+</header>
+
+<body>
+    <div class="stat">
+        <p id="stattitle">
+            STATISTIQUES
+        </p>
+        <hr class="small">
+        <div class="statbank">
+
+                <div class="modo">
+                    <div class="counter">
+                        <span class="img">
+                            <img src="img/bag.png" width="20px">
+                        </span>
+                        <div class="value">
+                            <strong>5</strong>
+                        </div>
+                        <label id="">Modération</label>
+                    </div>
+                </div>
+
+                <div class="member">
+                    <div class="counter">
+                        <span class="img">
+                            <img src="img/member.png" width="20px">
+                        </span>
+                        <div class="value">
+                            <strong>6</strong>
+                        </div>
+                        <label id="">Membres sur le serveur</label>
+                    </div>
+                </div>
+
+                <div class="official">
+                    <div class="counter">
+                        <span class="img">
+                            <img src="img/check.png" width="20px">
+                        </span>
+                        <div class="value">
+                            <strong>3</strong>
+                        </div>
+                        <label id="">Membres officiels</label>
+                    </div>
+                </div>
+
+        </div>
+    </div>
+</body>
+
+<footer>
+    <div class="footer">
+        <div class="copyright">
+            <p>A-21 Communautaire</p>
+            <h1 id="copyright">Copyright &copy; A-21 - Tout Droits Réservés</h1>
+            <h1>2018 - 2020</h1>
+        </div>
+        <div class="button">
+            <div class="social">
+                <a href="https://discord.gg/r5kfgcT" target="blank" title="Discord"><img src="img/discord.png" width="35"></a>
+            </div>
+            <div class="social">
+                <a href="https://twitter.com/A21Community" target="blanck" title="Twitter"><img src="img/twitter.png" width="30"></a>
+            </div>
+            <div class="social">
+                <a href="https://www.youtube.com/channel/UClxgJM5Xc0Q4ImMh7bBGIZg" target="blank" title="Youtube"><img src="img/youtube.png" width="32.5"></a>
+            </div>
+            <div class="social">
+                <a href="https://utip.io/a21communautaire" target="blank" title="Utip"><img src="img/utip.png" width="32.5"></a>
+            </div>
+        </div>
+    </div>
+
+<script type="text/javascript">
+    function langbutton(){
+        setTimeout(function(){
+            location.reload();
+        },1);
+    }
+
+</script>
+<script>
+
+
+    var language = {
+        fr: {
+            header: "ACCUEIL"
+        },
+        eng: {
+            header: "HOME"
+        },
+        es: {
+            header: "ACOGIDA"
+        },
+        deu: {
+            header: "EMPFANG"
+        }
+    };
+
+    if (window.location.hash) {
+        if (window.location.hash === "#fr") {
+            homebtn.textContent = language.fr.header;
+        }
+    }
+
+    if (window.location.hash) {
+        if (window.location.hash === "#eng") {
+            homebtn.textContent = language.eng.header;
+        }
+    }
+
+    if (window.location.hash) {
+        if (window.location.hash === "#es") {
+            homebtn.textContent = language.es.header;
+        }
+    }
+
+    if (window.location.hash) {
+        if (window.location.hash === "#deu") {
+            homebtn.textContent = language.deu.header;
+        }
+    }
+
+    var language = {
+        fr: {
+            header: "À PROPOS DE NOUS"
+        },
+        eng: {
+            header: "ABOUT US"
+        },
+        es: {
+            header: "A PROPÓSITO DE NOSOTROS"
+        },
+        deu: {
+            header: "ÜBER UNS"
+        }
+    };
+
+    if (window.location.hash) {
+        if (window.location.hash === "#fr") {
+            faqbtn.textContent = language.fr.header;
+        }
+    }
+
+    if (window.location.hash) {
+        if (window.location.hash === "#eng") {
+            faqbtn.textContent = language.eng.header;
+        }
+    }
+
+    if (window.location.hash) {
+        if (window.location.hash === "#es") {
+            faqbtn.textContent = language.es.header;
+        }
+    }
+
+    if (window.location.hash) {
+        if (window.location.hash === "#deu") {
+            faqbtn.textContent = language.deu.header;
+        }
+    }
+
+    var language = {
+        fr: {
+            header: "BOUTIQUE"
+        },
+        eng: {
+            header: "SHOP"
+        },
+        es: {
+            header: "TIENDA"
+        },
+        deu: {
+            header: "GESCHÄFT"
+        }
+    };
+
+    if (window.location.hash) {
+        if (window.location.hash === "#fr") {
+            shopbtn.textContent = language.fr.header;
+        }
+    }
+
+    if (window.location.hash) {
+        if (window.location.hash === "#eng") {
+            shopbtn.textContent = language.eng.header;
+        }
+    }
+
+    if (window.location.hash) {
+        if (window.location.hash === "#es") {
+            shopbtn.textContent = language.es.header;
+        }
+    }
+
+    if (window.location.hash) {
+        if (window.location.hash === "#deu") {
+            shopbtn.textContent = language.deu.header;
+        }
+    }
+
+    var language = {
+        fr: {
+            header: "STATISTIQUES"
+        },
+        eng: {
+            header: "STATISTICS"
+        },
+        es: {
+            header: "ESTADÍSTICAS"
+        },
+        deu: {
+            header: "STATISTIKEN"
+        }
+    };
+
+    if (window.location.hash) {
+        if (window.location.hash === "#fr") {
+            statbtn.textContent = language.fr.header;
+        }
+    }
+
+    if (window.location.hash) {
+        if (window.location.hash === "#eng") {
+            statbtn.textContent = language.eng.header;
+        }
+    }
+
+    if (window.location.hash) {
+        if (window.location.hash === "#es") {
+            statbtn.textContent = language.es.header;
+        }
+    }
+
+    if (window.location.hash) {
+        if (window.location.hash === "#deu") {
+            statbtn.textContent = language.deu.header;
+        }
+    }
+
+    var language = {
+        fr: {
+            header: "REJOINS-NOUS"
+        },
+        eng: {
+            header: "JOIN US"
+        },
+        es: {
+            header: "ÚNETE A NOSOTROS"
+        },
+        deu: {
+            header: "BEGLEITE UNS"
+        }
+    };
+
+    if (window.location.hash) {
+        if (window.location.hash === "#fr") {
+            joinbtn.textContent = language.fr.header;
+        }
+    }
+
+    if (window.location.hash) {
+        if (window.location.hash === "#eng") {
+            joinbtn.textContent = language.eng.header;
+        }
+    }
+
+    if (window.location.hash) {
+        if (window.location.hash === "#es") {
+            joinbtn.textContent = language.es.header;
+        }
+    }
+
+    if (window.location.hash) {
+        if (window.location.hash === "#deu") {
+            joinbtn.textContent = language.deu.header;
+        }
+    }
+
+    var language = {
+        fr: {
+            stat: "STATISTIQUES"
+        },
+        eng: {
+            stat: "STATISTICS"
+        },
+        es: {
+            stat: "ESTADÍSTICAS"
+        },
+        deu: {
+            stat: "STATISTIKEN"
+        }
+    };
+
+    if (window.location.hash) {
+        if (window.location.hash === "#fr") {
+            stattitle.textContent = language.fr.stat;
+        }
+    }
+
+    if (window.location.hash) {
+        if (window.location.hash === "#eng") {
+            stattitle.textContent = language.eng.stat;
+        }
+    }
+
+    if (window.location.hash) {
+        if (window.location.hash === "#es") {
+            stattitle.textContent = language.es.stat;
+        }
+    }
+
+    if (window.location.hash) {
+        if (window.location.hash === "#deu") {
+            stattitle.textContent = language.deu.stat;
+        }
+    }
+
+    var language = {
+        fr: {
+            stat: "Modération"
+        },
+        eng: {
+            stat: "Moderation"
+        },
+        es: {
+            stat: "Moderación"
+        },
+        deu: {
+            stat: "Mäßigung"
+        }
+    };
+
+    if (window.location.hash) {
+        if (window.location.hash === "#fr") {
+            modo.textContent = language.fr.stat;
+        }
+    }
+
+    if (window.location.hash) {
+        if (window.location.hash === "#eng") {
+            modo.textContent = language.eng.stat;
+        }
+    }
+
+    if (window.location.hash) {
+        if (window.location.hash === "#es") {
+            modo.textContent = language.es.stat;
+        }
+    }
+
+    if (window.location.hash) {
+        if (window.location.hash === "#deu") {
+            modo.textContent = language.deu.stat;
+        }
+    }
+
+    var language = {
+        fr: {
+            stat: "Membres sur le serveur"
+        },
+        eng: {
+            stat: "Members on the server"
+        },
+        es: {
+            stat: "Miembros en el servidor"
+        },
+        deu: {
+            stat: "Mitglieder auf dem Server"
+        }
+    };
+
+    if (window.location.hash) {
+        if (window.location.hash === "#fr") {
+            member.textContent = language.fr.stat;
+        }
+    }
+
+    if (window.location.hash) {
+        if (window.location.hash === "#eng") {
+            member.textContent = language.eng.stat;
+        }
+    }
+
+    if (window.location.hash) {
+        if (window.location.hash === "#es") {
+            member.textContent = language.es.stat;
+        }
+    }
+
+    if (window.location.hash) {
+        if (window.location.hash === "#deu") {
+            member.textContent = language.deu.stat;
+        }
+    }
+
+    var language = {
+        fr: {
+            stat: "Membres officiels"
+        },
+        eng: {
+            stat: "Official members"
+        },
+        es: {
+            stat: "Miembros oficiales"
+        },
+        deu: {
+            stat: "Offizielle Mitglieder"
+        }
+    };
+
+    if (window.location.hash) {
+        if (window.location.hash === "#fr") {
+            offimember.textContent = language.fr.stat;
+        }
+    }
+
+    if (window.location.hash) {
+        if (window.location.hash === "#eng") {
+            offimember.textContent = language.eng.stat;
+        }
+    }
+
+    if (window.location.hash) {
+        if (window.location.hash === "#es") {
+            offimember.textContent = language.es.stat;
+        }
+    }
+
+    if (window.location.hash) {
+        if (window.location.hash === "#deu") {
+            offimember.textContent = language.deu.stat;
+        }
+    }
+
+    var language = {
+        fr: {
+            equipe: "EQUIPE"
+        },
+        eng: {
+            equipe: "TEAM"
+        },
+        es: {
+            equipe: "EQUIPO"
+        },
+        deu: {
+            equipe: "MANNSCHAFT"
+        }
+    };
+
+    var language = {
+        fr: {
+            footer: "Copyright © A-21 - Tout Droits Réservés"
+        },
+        eng: {
+            footer: "Copyright © A-21 - All Rights Reserved"
+        },
+        es: {
+            footer: "Copyright © A-21 - Todos los derechos reservados"
+        },
+        deu: {
+            footer: "Copyright © A-21 - Alle Rechte vorbehalten"
+        }
+    };
+
+    if (window.location.hash) {
+        if (window.location.hash === "#fr") {
+            copyright.textContent = language.fr.footer;
+        }
+    }
+
+    if (window.location.hash) {
+        if (window.location.hash === "#eng") {
+            copyright.textContent = language.eng.footer;
+        }
+    }
+
+    if (window.location.hash) {
+        if (window.location.hash === "#es") {
+            copyright.textContent = language.es.footer;
+        }
+    }
+
+    if (window.location.hash) {
+        if (window.location.hash === "#deu") {
+            copyright.textContent = language.deu.footer;
+        }
+    }
+</script>
+
+</footer>
+
+<script type="text/javascript">
+
+    if(screen.width < 1024) {
+        location.replace("https://nelvazzwebsitea21mobile.github.io/");
+    } else {
+        location.replace = none;
+    }
+
+</script>
+
+<script type="text/javascript">
+
+    if(screen.width > 1024) {
+        location.replace(none);
+    } else {
+        location.replace = none;
+    }
+
+</script>
+
+</html>

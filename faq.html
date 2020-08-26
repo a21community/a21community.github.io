@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html class="animated fadeIn">
+<head>
+    <title>Site de la A-21</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/language.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/logoweb.png">  
+
+<div class="home">
+    <p>A-21 COMMUNAUTAIRE</p>
+</div>
+</head>
+
+<header>
+    <nav class="menu-nav">
+        <ul class="language">
+            <li class="selector"><a class="selector"><img src="img/world.png" height="15px"><img src="img/bottom.png" height="12px"></a>
+            <ul class="langchoice">
+                <li class="french"><a class="french" href="#" onclick="langbutton()">Français<img src="img/france.png" width="32px"></a></li>
+                <li><a href="#eng" onclick="langbutton()">English<img src="img/united-kingdom.png" width="32px"></a></li>
+                <li><a href="#es" onclick="langbutton()">Español<img src="img/spain.png" width="32px"></a></li>
+                <li class="germany"><a class="germany" href="#deu" onclick="langbutton()">Deutsh<img src="img/germany.png" width="32px"></a></li>
+            </ul>
+            </li>
+        </ul>
+        <ul class="menu-header">
+            <li class="btn"><a href="home.html" id="homebtn">ACCUEIL</a>
+            </li>
+            <li class="btn"><a href="faq.html" id="faqbtn">À PROPOS DE NOUS</a>
+            </li>
+            <li class="btn"><a class="headercenter" href="home.html"><img src="img/logoa-21coupé.png" width="80px"></a>
+            </li>
+            <li class="btn"><a href="shop.html" id="shopbtn">BOUTIQUE</a>
+            </li>
+            <li class="btn"><a href="stat.html" id="statbtn">STATISTIQUES</a>
+            </li>
+        </ul>
+    </nav>
+<section class="banner"></section>
+<script type="text/javascript">
+    window.addEventListener("scroll", function(){
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+    })
+</script>
+</header>
+
+<body class="center">
+
+    <div class="faq">
+        <p id="faqtitle">
+            À PROPOS DE NOUS
+        </p>
+        <hr class="small">
+        <div class="container-faq">
+            <h1 class="faqtext" id="faqtext">
+                La A-21 est un serveur Communautaire et Multi Gaming ayant pour but de rassembler de nombreux gamers et d'avoir une bonne ambiance. Et bien sûr pour contrôler cela, il y a un <a href="rules.html"> règlement </a> et nous avons un staff compétent et très réactif. Il y aura plusieurs évènements tous différents les uns des autres ! Que ce soit des compétitions sur des jeux en ligne ou des mini-jeux sur le serveur Discord. Des giveaways pourront parfois êtres organisés avec des lots à gagner en ligne ou en IRL !
+            </h1>
+            <img src="img/logoa-21.png" width="500px">
+        </div>
+    </div>
+</body>
+
+<footer>
+    <div class="footer">
+        <div class="copyright">
+            <p>A-21 Communautaire</p>
+            <h1 id="copyright">Copyright &copy; A-21 - Tout Droits Réservés</h1>
+            <h1>2018 - 2020</h1>
+        </div>
+        <div class="button">
+            <div class="social">
+                <a href="https://discord.gg/r5kfgcT" target="blank" title="Discord"><img src="img/discord.png" width="35"></a>
+            </div>
+            <div class="social">
+                <a href="https://twitter.com/A21Community" target="blanck" title="Twitter"><img src="img/twitter.png" width="30"></a>
+            </div>
+            <div class="social">
+                <a href="https://www.youtube.com/channel/UClxgJM5Xc0Q4ImMh7bBGIZg" target="blank" title="Youtube"><img src="img/youtube.png" width="32.5"></a>
+            </div>
+            <div class="social">
+                <a href="https://utip.io/a21communautaire" target="blank" title="Utip"><img src="img/utip.png" width="32.5"></a>
+            </div>
+        </div>
+    </div>
+
+<script type="text/javascript">
+    function langbutton(){
+        setTimeout(function(){
+            location.reload();
+        },1);
+    }
+
+    window.localStorage.setItem('language', '#');
+    window.localStorage.setItem('language', '#eng');
+    window.localStorage.setItem('language', '#es');
+    window.localStorage.setItem('language', '#deu');
+</script>
+
+<script>
+
+
+    var language = {
+        fr: {
+            header: "ACCUEIL"
+        },
+        eng: {
+            header: "HOME"
+        },
+        es: {
+            header: "ACOGIDA"
+        },
+        deu: {
+            header: "EMPFANG"
+        }
+    };
+
+    if (window.location.hash) {
+        if (window.location.hash === "#fr") {
+            homebtn.textContent = language.fr.header;
+        }
+    }
+
+    if (window.location.hash) {
+        if (window.location.hash === "#eng") {
+            homebtn.textContent = language.eng.header;
+        }
+    }
+
+    if (window.location.hash) {
+        if (window.location.hash === "#es") {
+            homebtn.textContent = language.es.header;
+        }
+    }
+
+    if (window.location.hash) {
+        if (window.location.hash === "#deu") {
+            homebtn.textContent = language.deu.header;
+        }
+    }
+
+    var language = {
+        fr: {
+            header: "À PROPOS DE NOUS"
+        },
+        eng: {
+            header: "ABOUT US"
+        },
+        es: {
+            header: "A PROPÓSITO DE NOSOTROS"
+        },
+        deu: {
+            header: "ÜBER UNS"
+        }
+    };
+
+    if (window.location.hash) {
+        if (window.location.hash === "#fr") {
+            faqbtn.textContent = language.fr.header;
+        }
+    }
+
+    if (window.location.hash) {
+        if (window.location.hash === "#eng") {
+            faqbtn.textContent = language.eng.header;
+        }
+    }
+
+    if (window.location.hash) {
+        if (window.location.hash === "#es") {
+            faqbtn.textContent = language.es.header;
+        }
+    }
+
+    if (window.location.hash) {
+        if (window.location.hash === "#deu") {
+            faqbtn.textContent = language.deu.header;
+        }
+    }
+
+    var language = {
+        fr: {
+            header: "BOUTIQUE"
+        },
+        eng: {
+            header: "SHOP"
+        },
+        es: {
+            header: "TIENDA"
+        },
+        deu: {
+            header: "GESCHÄFT"
+        }
+    };
+
+    if (window.location.hash) {
+        if (window.location.hash === "#fr") {
+            shopbtn.textContent = language.fr.header;
+        }
+    }
+
+    if (window.location.hash) {
+        if (window.location.hash === "#eng") {
+            shopbtn.textContent = language.eng.header;
+        }
+    }
+
+    if (window.location.hash) {
+        if (window.location.hash === "#es") {
+            shopbtn.textContent = language.es.header;
+        }
+    }
+
+    if (window.location.hash) {
+        if (window.location.hash === "#deu") {
+            shopbtn.textContent = language.deu.header;
+        }
+    }
+
+    var language = {
+        fr: {
+            header: "STATISTIQUES"
+        },
+        eng: {
+            header: "STATISTICS"
+        },
+        es: {
+            header: "ESTADÍSTICAS"
+        },
+        deu: {
+            header: "STATISTIKEN"
+        }
+    };
+
+    if (window.location.hash) {
+        if (window.location.hash === "#fr") {
+            statbtn.textContent = language.fr.header;
+        }
+    }
+
+    if (window.location.hash) {
+        if (window.location.hash === "#eng") {
+            statbtn.textContent = language.eng.header;
+        }
+    }
+
+    if (window.location.hash) {
+        if (window.location.hash === "#es") {
+            statbtn.textContent = language.es.header;
+        }
+    }
+
+    if (window.location.hash) {
+        if (window.location.hash === "#deu") {
+            statbtn.textContent = language.deu.header;
+        }
+    }
+
+    var language = {
+        fr: {
+            header: "REJOINS-NOUS"
+        },
+        eng: {
+            header: "JOIN US"
+        },
+        es: {
+            header: "ÚNETE A NOSOTROS"
+        },
+        deu: {
+            header: "BEGLEITE UNS"
+        }
+    };
+
+    if (window.location.hash) {
+        if (window.location.hash === "#fr") {
+            joinbtn.textContent = language.fr.header;
+        }
+    }
+
+    if (window.location.hash) {
+        if (window.location.hash === "#eng") {
+            joinbtn.textContent = language.eng.header;
+        }
+    }
+
+    if (window.location.hash) {
+        if (window.location.hash === "#es") {
+            joinbtn.textContent = language.es.header;
+        }
+    }
+
+    if (window.location.hash) {
+        if (window.location.hash === "#deu") {
+            joinbtn.textContent = language.deu.header;
+        }
+    }
+
+    var language = {
+        fr: {
+            faq: "À PROPOS DE NOUS"
+        },
+        eng: {
+            faq: "ABOUT US"
+        },
+        es: {
+            faq: "A PROPÓSITO DE NOSOTROS"
+        },
+        deu: {
+            faq: "ÜBER UNS"
+        }
+    };
+
+    if (window.location.hash) {
+        if (window.location.hash === "#fr") {
+            faqtitle.textContent = language.fr.faq;
+        }
+    }
+
+    if (window.location.hash) {
+        if (window.location.hash === "#eng") {
+            faqtitle.textContent = language.eng.faq;
+        }
+    }
+
+    if (window.location.hash) {
+        if (window.location.hash === "#es") {
+            faqtitle.textContent = language.es.faq;
+        }
+    }
+
+    if (window.location.hash) {
+        if (window.location.hash === "#deu") {
+            faqtitle.textContent = language.deu.faq;
+        }
+    }
+    
+    var language = {
+        fr: {
+            footer: "Copyright © A-21 - Tout Droits Réservés"
+        },
+        eng: {
+            footer: "Copyright © A-21 - All Rights Reserved"
+        },
+        es: {
+            footer: "Copyright © A-21 - Todos los derechos reservados"
+        },
+        deu: {
+            footer: "Copyright © A-21 - Alle Rechte vorbehalten"
+        }
+    };
+
+    if (window.location.hash) {
+        if (window.location.hash === "#fr") {
+            copyright.textContent = language.fr.footer;
+        }
+    }
+
+    if (window.location.hash) {
+        if (window.location.hash === "#eng") {
+            copyright.textContent = language.eng.footer;
+        }
+    }
+
+    if (window.location.hash) {
+        if (window.location.hash === "#es") {
+            copyright.textContent = language.es.footer;
+        }
+    }
+
+    if (window.location.hash) {
+        if (window.location.hash === "#deu") {
+            copyright.textContent = language.deu.footer;
+        }
+    }
+</script>
+
+</footer>
+
+<script type="text/javascript">
+
+    if(screen.width < 1024) {
+        location.replace("https://nelvazzwebsitea21mobile.github.io/");
+    } else {
+        location.replace = none;
+    }
+
+</script>
+
+<script type="text/javascript">
+
+    if(screen.width > 1024) {
+        location.replace(none);
+    } else {
+        location.replace = none;
+    }
+
+</script>
+
+</html>
