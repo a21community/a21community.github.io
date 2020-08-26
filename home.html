@@ -6,8 +6,6 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="css/language.css">
     <link rel="stylesheet" type="text/css" href="css/slider.css">
-    <!--<link rel="stylesheet" type="text/css" href="css/navbarstyle.css">-->
-    <link rel="stylesheet" type="text/javascript" href="js/languagepage.js">
     <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
@@ -55,7 +53,7 @@
         <hr class="small">
         <div class="container-faq">
             <h1 class="faqtext" id="faqtext">
-                La A-21 est un serveur Communautaire et Multi Gaming ayant pour but de rassembler de nombreux gamers et d'avoir une bonne ambiance. Et bien sûr pour contrôler cela, il y a un <a href="rules.html"> règlement </a> et nous avons un staff compétent et très réactif. Il y aura plusieurs évènements tous différents les uns des autres ! Que ce soit des compétitions sur des jeux en ligne ou des mini-jeux sur le serveur Discord. Des giveaways pourront parfois êtres organisés avec des lots à gagner en ligne ou en IRL !
+                La A-21 est un serveur Communautaire et Multi Gaming ayant pour but de rassembler de nombreux gamers et d'avoir une bonne ambiance. Et bien sûr pour contrôler cela, il y a un <a href="rules.html" id="rules">règlement</a> et nous avons un staff compétent et très réactif. Il y aura plusieurs évènements tous différents les uns des autres ! Que ce soit des compétitions sur des jeux en ligne ou des mini-jeux sur le serveur Discord. Des giveaways pourront parfois êtres organisés avec des lots à gagner en ligne ou en IRL !
             </h1>
             <img src="img/logoa-21.png" width="500px">
         </div>
@@ -472,6 +470,84 @@
     if (window.location.hash) {
         if (window.location.hash === "#deu") {
             faqtitle.textContent = language.deu.faq;
+        }
+    }
+
+    var language = {
+        fr: {
+            faq: `La A-21 est un serveur Communautaire et Multi Gaming ayant pour but de rassembler de nombreux gamers et d'avoir une bonne ambiance. Et bien sûr pour contrôler cela, il y a un  et nous avons un staff compétent et très réactif. Il y aura plusieurs évènements tous différents les uns des autres ! Que ce soit des compétitions sur des jeux en ligne ou des mini-jeux sur le serveur Discord. Des giveaways pourront parfois êtres organisés avec des lots à gagner en ligne ou en IRL !`
+        },
+        eng: {
+            faq: `The A-21 is a Community and Multi Gaming server with the aim of bringing together many gamers and having a good atmosphere. And of course to control that, there is a  and we have a competent and very responsive staff. There will be several events all different from each other! Whether it's competitions on online games or mini-games on the Discord server. Giveaways can sometimes be organized with prizes to be won online or in IRL!`
+        },
+        es: {
+            faq: `El A-21 es un servidor comunitario y multijuego destinado a reunir a muchos jugadores y tener un buen ambiente. Y, por supuesto, para controlar eso, hay un  y tenemos un personal competente y muy receptivo. ¡Habrá varios eventos todos diferentes entre sí! Ya sean competiciones en juegos en línea o minijuegos en el servidor de Discord. ¡A veces se pueden organizar sorteos con premios que se pueden ganar en línea o en IRL!`
+        },
+        deu: {
+            faq: `Der A-21 ist ein Community- und Multi-Gaming-Server mit dem Ziel, viele Spieler zusammenzubringen und eine gute Atmosphäre zu haben. Und um das zu kontrollieren, gibt es natürlich eine Regelung und wir haben ein kompetentes und sehr reaktionsschnelles Personal. Es wird mehrere Veranstaltungen geben, die sich alle voneinander unterscheiden! Ob es sich um Wettbewerbe für Online-Spiele oder Minispiele auf dem Discord-Server handelt. Werbegeschenke können manchmal mit Preisen organisiert werden, die online oder im IRL gewonnen werden können!`
+        }
+    };
+
+    if (window.location.hash) {
+        if (window.location.hash === "#fr") {
+            faqtext.textContent = language.fr.faq;
+        }
+    }
+
+    if (window.location.hash) {
+        if (window.location.hash === "#eng") {
+            faqtext.textContent = language.eng.faq;
+        }
+    }
+
+    if (window.location.hash) {
+        if (window.location.hash === "#es") {
+            faqtext.textContent = language.es.faq;
+        }
+    }
+
+    if (window.location.hash) {
+        if (window.location.hash === "#deu") {
+            faqtext.textContent = language.deu.faq;
+        }
+    }
+
+    var language = {
+        fr: {
+            faq: `règlement`
+        },
+        eng: {
+            faq: `regulation`
+        },
+        es: {
+            faq: "reglamento"
+        },
+        deu: {
+            faq: "Regelung"
+        }
+    };
+
+    if (window.location.hash) {
+        if (window.location.hash === "#fr") {
+            rules.textContent = language.fr.faq;
+        }
+    }
+
+    if (window.location.hash) {
+        if (window.location.hash === "#eng") {
+            rules.textContent = language.eng.faq;
+        }
+    }
+
+    if (window.location.hash) {
+        if (window.location.hash === "#es") {
+            rules.textContent = language.es.faq;
+        }
+    }
+
+    if (window.location.hash) {
+        if (window.location.hash === "#deu") {
+            rules.textContent = language.deu.faq;
         }
     }
 
