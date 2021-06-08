@@ -328,7 +328,7 @@ div.shop hr{
 }
 
 .item2{
-    background: url("../img/404-item-blur.png") no-repeat center center;
+    background: linear-gradient(to right, #060c21 50%, #040817 50%);
     padding: 100px 75px;
     width: 291px;
     height: 398px;
